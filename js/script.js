@@ -1,5 +1,5 @@
 // even pada saat link di klick
-$('.page-scroll').on('click', function(){
+$('.page-scroll').on('click', function(e){
     
     //ambil isi href
     var tujuan = $(this).attr('href');
@@ -9,7 +9,7 @@ $('.page-scroll').on('click', function(){
 
     //pindahkan scroll
     $('body').animate({
-        scrollTop: elemenTujuan.offset().top -50
+        scrollTop: elemenTujuan.offset().top - 50
     }, 1000);
 
 });
