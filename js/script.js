@@ -11,5 +11,5 @@ $('.page-scroll').on('click', function(e){
     $('body').animate({
         scrollTop: elemenTujuan.offset().top - 50
     }, 1000);
-
+    e.preventDefault();
 });
